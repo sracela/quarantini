@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 //import 'routes.dart';
-import 'screens/home/home.dart';
+//import 'screens/home/home.dart';
+import 'screens/splash//splash.dart';
 import 'theme/style.dart';
 
 void main() {
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
         theme: appTheme(),
         //initialRoute: '/',
         //routes: routes,
-        home: MyHomePage(),
+        //home: MyHomePage(),
+        home: SplashScreen(),
         debugShowCheckedModeBanner: false,
       );
 //    );
