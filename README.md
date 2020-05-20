@@ -1,4 +1,4 @@
-# quarantini
+# quarantini Flutter App
 
 A new Flutter application to enjoy the Quaratine due to the covid-19.
 
