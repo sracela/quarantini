@@ -103,6 +103,7 @@ class _LoginScreenState extends State<LoginScreen>
                       }
                       return null;
                     },
+                    obscureText: tru,
                     keyboardType: TextInputType.text,
                     maxLength: 20,
                     textAlign: TextAlign.center,
