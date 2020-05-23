@@ -34,7 +34,8 @@ class _SplashScreenState extends State<SplashScreen> {
     return Material(
         child: Column(
           children: <Widget>[
-            SizedBox(height: 100.0,),
+            SizedBox(height: 100.0),
+
             Flexible(
               flex: 3,
               child: SafeArea(
@@ -44,22 +45,18 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
               ),
             ),
-            Text(
-              'welcome',
-              style: Theme.of(context).textTheme.headline,
-            ),
-            Flexible(
-              flex: 3,
-              child: SafeArea(
-                child: Container(
-                  padding: const EdgeInsets.symmetric(vertical: 100.0, horizontal: 16.0),
-                  alignment: Alignment.bottomCenter,
-                  child: CircularProgressIndicator(
-                    valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
-                  ),
-                ),
-              ),
-            ),
+//            Flexible(
+//              flex: 3,
+//              child: SafeArea(
+//                child: Container(
+//                  padding: const EdgeInsets.symmetric(vertical: 100.0, horizontal: 16.0),
+//                  alignment: Alignment.bottomCenter,
+//                  child: CircularProgressIndicator(
+//                    valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
+//                  ),
+//                ),
+//              ),
+//            ),
           ],
         )
     );

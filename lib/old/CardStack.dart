@@ -180,7 +180,7 @@ class _CardStackState extends State<CardStack>
   }
 
   void _horizontalDragEnd(DragEndDetails details) {
-    if (details.primaryVelocity < 0) {
+    if (details.primaryVelocity < 4) {
       // Swiped Right to Left
       controller.forward().whenComplete(() {
         setState(() {

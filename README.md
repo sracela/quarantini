@@ -2,9 +2,11 @@
 
 A new Flutter application to enjoy the Quaratine due to the covid-19.
 
-## Getting Started
+## Demo (work still in progress)
+![alt text](https://github.com/sracela/quarantini/assets/quarantini.gif "Demo")
 
-This project is a starting point for a Flutter application.
+## Getting Started
+App in debug mode yet!
 
 A few resources to get you started if this is your first Flutter project:
 

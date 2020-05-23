@@ -1,27 +1,28 @@
 import 'package:flutter/material.dart';
-import 'package:quarantini/screens/home/components/MoveCardsButtons.dart';
 import 'package:quarantini/screens/home/components/Body.dart';
+import 'package:quarantini/screens/splash/splash.dart';
 
 class MyHomePage extends StatefulWidget {
+  static Route<dynamic> route() {
+    return MaterialPageRoute(
+      builder: (context) => MyHomePage(),
+    );
+  }
+
   @override
   _MyHomePageState createState() => new _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage>
     with SingleTickerProviderStateMixin {
-  String imageUrl = 'assets/covid1.jpg';
+  //String imageUrl = 'assets/covid1.jpg';
+
+
   @override
   void initState() {
     super.initState();
   }
 
-  //final Body onCardChange;
-//  void onCardChanged() {
-//    setState(() {
-//      _widgetIndex =
-//          _widgetIndex < cards.length - 1 ? _widgetIndex + 1 : _widgetIndex;
-//    });
-//  }
 
   @override
   Widget build(BuildContext context) {
@@ -31,10 +32,15 @@ class _MyHomePageState extends State<MyHomePage>
           leading: IconButton(
             icon: Icon(Icons.arrow_back_ios),
             color: Colors.black,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => SplashScreen(),
+                ));},
           ),
           title: new Text("Let's play Quarantini!",
-              style: Theme.of(context).textTheme.title),
+              style: Theme.of(context).textTheme.headline6),
           actions: <Widget>[
             Padding(
                 padding: EdgeInsets.only(right: 8.0),
@@ -45,23 +51,7 @@ class _MyHomePageState extends State<MyHomePage>
                 ))
           ],
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Container(
-              padding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 50.0),
-              child: Body(),
-            ),
-            MoveCardsButtons(),
-          ],
-        )
-//        body: CardStack(
-//          onCardChanged: (url) {
-//            setState(() {
-//              imageUrl = url;
-//            });
-//          },
-//        )
+        body: Body(),
         );
   }
 }

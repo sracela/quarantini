@@ -51,6 +51,7 @@ class _LoginScreenState extends State<LoginScreen>
       return Scaffold(
         //body: _logueado ? MyHomePage(mensaje: mensaje) : loginForm(),
         body: _logueado ? MyHomePage() : loginForm(),
+        //body: MyHomePage(),
       );
     }
 

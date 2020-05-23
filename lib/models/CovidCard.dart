@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:transparent_image/transparent_image.dart';
 
 class CovidCard extends StatelessWidget {
   final int index;
   final String imageUrl;
   final String cardText;
-  Widget imageCell;
 
   CovidCard({this.index, this.imageUrl, this.cardText});
 
@@ -16,33 +14,12 @@ class CovidCard extends StatelessWidget {
       cardText: json['description'],
     );
   }
-//
-//  Widget _imageCell(String imageUrl) {
-//    return FadeInImage.memoryNetwork(
-//          placeholder: kTransparentImage,
-//          image: imageUrl,
-//          fit: BoxFit.cover,
-//        );
-//  }
+
   @override
   Widget build(BuildContext context) {
     return Stack(
       overflow: Overflow.visible,
       children: <Widget>[
-//        Container(
-//        width: 300.0,
-//        height: 400.0,
-////        decoration: BoxDecoration(
-////            borderRadius: BorderRadius.circular(10.0),
-////            image: DecorationImage(
-////                image: Image.network(imageUrl),
-////                fit: BoxFit.cover)
-////        ),
-//        child: ClipRRect(
-//            borderRadius: BorderRadius.circular(10.0),
-//            child: _imageCell(imageUrl))
-//
-//    ),
         Container(
           width: 300.0,
           height: 400.0,
