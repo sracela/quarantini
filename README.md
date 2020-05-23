@@ -3,7 +3,7 @@
 A new Flutter application to enjoy the Quaratine due to the covid-19.
 
 ## Demo (work still in progress)
-![alt text](https://github.com/sracela/quarantini/assets/quarantini.gif "Demo")
+![alt text](https://github.com/sracela/quarantini/blob/dev/assets/quarantini.gif "Demo")
 
 ## Getting Started
 App in debug mode yet!
